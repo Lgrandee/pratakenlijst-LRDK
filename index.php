@@ -15,7 +15,8 @@
     require_once('header.php');
     ?>
     <!-- header -->
-    <div class="container">
+    <div class="Logo_box">
+        
     </div>
     <main class="main"> 
             <button class="button" type="button" onclick="toggleNav()">
