@@ -8,6 +8,9 @@
 </head>
 <body class = "nav-open">
     <header>
+    <div class="Logo_box">
+        
+     </div>
         <?php
             require_once("header.php");
         ?>

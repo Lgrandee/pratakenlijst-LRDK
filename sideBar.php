@@ -28,6 +28,12 @@
         </div>
     </nav>
 </header>
+<main class="main"> 
+    <button class="button" type="button" onclick="toggleNav()">
+        <ion-icon name="menu-outline" size="large"></ion-icon>
+    </button>            
+</main>
+
    
 
     

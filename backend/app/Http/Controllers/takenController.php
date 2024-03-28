@@ -5,11 +5,11 @@ if ($action == "create")
 {
     require_once("../../../conn.php");
 
-    $query = ""
+    $query = "";
     
-    $statement = $conn->prepare($query)
+    $statement = $conn->prepare($query);
     
-    $statement->execute()
+    $statement->execute();
     
     $taken = $statement->fetchAll(PDO::FETCH_ASSOC);
     
@@ -30,7 +30,7 @@ if ($action == "update")
     
 }
 
-if ($action == "delete")
+if ($action == "delete");
 {
     require_once("../../../conn.php");
 

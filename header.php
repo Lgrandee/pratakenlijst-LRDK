@@ -6,8 +6,15 @@
     <title>header</title>
 </head>
 <body>
+<div class="header_flex">
     <?php
-        require_once('sideBar.php'); //Haal de sidebar op, zodat die in de header zit.
-    ?>
+        require_once('sideBar.php');
+    ?>   
+<div class="Logo_box">
+    <img src="img\logo-big-outlines-only.png" alt="Logo"> //Haal de sidebar op, zodat die in de header zit.
+</div>
+ 
+</div>  
+
 </body>
 </html>
