@@ -119,6 +119,8 @@ label{
 
 
 
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -439,6 +441,7 @@ transform: translateX(350px);
   background-color: #ffffff;
 }
 
+<<<<<<< Updated upstream
 /* logo */
 .Logo_box{
   background-image: url('../img/Pretparkvakanties_D.jpg');
@@ -458,3 +461,31 @@ transform: translateX(350px);
   left: 20px; 
   z-index: 1000;
 }
+=======
+tr:nth-child(odd)
+{
+  background-color:black;
+  color: white;
+}
+
+tr:first-child
+{
+  background-color:lightgray;
+}
+
+tr{
+  background-color: white;
+}
+
+tr:hover
+{
+  background-color:#9DC3C2;
+  color: black;
+}
+
+table{
+  width: 100%;
+  margin: 0 auto;
+}
+
+>>>>>>> Stashed changes
