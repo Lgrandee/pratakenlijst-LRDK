@@ -292,6 +292,7 @@ label{
     page-break-after: avoid;
   }
 }
+
 /* header  */
 .nav {
   width: 350px;
@@ -319,6 +320,8 @@ label{
 
 .main {
   transition: transform 0.2s;   
+  position:absolute; top: 100; left: 100;
+  z-index: 2" 
 }
 
 .nav-open .nav {
@@ -356,6 +359,7 @@ transform: translateX(350px);
   border: none;
   cursor:pointer;
   overflow: hidden;
+  color: #ffffff;
 }
 
 /* footer */
@@ -434,4 +438,14 @@ transform: translateX(350px);
   color: #24262b;
   background-color: #ffffff;
 }
-
+/* logo */
+.Logo_box{
+  background-image: url('../img/Pretparkvakanties_D.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.Logo_box img{
+  width: 300px;
+  height: 300px;
+}

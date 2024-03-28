@@ -6,8 +6,15 @@
     <title>header</title>
 </head>
 <body>
+<div class="header_flex">
     <?php
         require_once('sideBar.php');
-    ?>
+    ?>   
+<div class="Logo_box">
+    <img src="img\logo-big-outlines-only.png" alt="Logo">
+</div>
+ 
+</div>  
+
 </body>
 </html>

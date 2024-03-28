@@ -7,6 +7,9 @@
 </head>
 <body>
     <header>
+    <div class="Logo_box">
+        
+     </div>
         <?php
             require_once("$base_url/header.php");
         ?>
