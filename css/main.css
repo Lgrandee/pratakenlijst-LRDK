@@ -435,3 +435,10 @@ transform: translateX(350px);
   background-color: #ffffff;
 }
 
+/* Mijn Account */
+.welcomeContainer {
+  position: absolute;
+  top: 20px;
+  left: 20px; 
+  z-index: 1000;
+}

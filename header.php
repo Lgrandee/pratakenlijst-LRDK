@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-        require_once('sideBar.php');
+        require_once('sideBar.php'); //Haal de sidebar op, zodat die in de header zit.
     ?>
 </body>
 </html>
