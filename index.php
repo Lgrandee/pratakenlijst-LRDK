@@ -10,10 +10,11 @@
 </head>
 
 <body class="nav-open">
-    <!-- header -->    
+    <!-- sidebar -->    
     <?php
     require_once('header.php');
     ?>
+    
     <!-- header -->
     <div class="container">
     </div>
