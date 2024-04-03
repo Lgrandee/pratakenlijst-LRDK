@@ -452,9 +452,176 @@ transform: translateX(350px);
 }
 
 /* Mijn Account */
-.welcomeContainer {
-  position: absolute;
-  top: 20px;
-  left: 20px; 
-  z-index: 1000;
+.topContainer{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.welcomeMessage{
+  display: flex;
+  flex-direction: column;
+}
+
+.welcomeMessage p{
+  font-size: 1.1em;
+  margin-top: -18px;
+  color: #999999c2;
+  transition: all 0.2s ease-in;
+}
+
+.welcomeMessage p:hover{
+  font-size: 1.1em;
+  margin-top: -18px;
+  color: #818181;
+  transition: all 0.2s ease-in;
+}
+
+.topContainer a{
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  background-color: #4d7398bd;
+  align-self: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+
+.topContainer a:hover{
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  background-color: #4D7298;
+  align-self: center;
+  text-decoration: underline;
+  transition: all 0.2s ease-in;
+}
+
+.bodyContainer{
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.userInformationBox{
+  border-radius: 5px;
+  width: 80%;
+  height: 500px;
+  background-color: #9999996e;
+  box-shadow: 2px 2px 2px 0px #222;
+  margin-right: 20px;
+
+}
+
+.userInformationBox h3{
+  margin-left: 15px;
+}
+
+.linksBox{
+  border-radius: 5px;
+  width: 20%;
+  height: 400px;
+  background-color: #9999996e;
+  box-shadow: 2px 2px 2px 0px #222;
+  margin-right: 20px;
+}
+
+.linksBox h3{
+  margin-left: 15px;
+
+}
+
+.linkList{
+  margin-left: 15px;
+}
+
+.linkGroup{
+  margin-bottom: 10px;
+}
+
+.linkGroup a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in;
+
+}
+
+.linkGroup img{
+  opacity: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.linkGroup:hover a{
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 1);
+  transition: all 0.2s ease-in;
+}
+
+.linkGroup:hover img{
+  opacity: 100%;
+  transition: all 0.2s ease-in;
+}
+
+.informationContainer{
+  margin-left: 17px;
+}
+
+.mainInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.boldSpan{
+  font-weight: 900;
+}
+
+.userInformationBox a{
+  width: fit-content;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  background-color: #4d7398bd;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  margin: 15px;
+} 
+
+.userInformationBox a:hover{
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  background-color: #4D7298;
+  text-decoration: underline;
+  transition: all 0.2s ease-in;
+  margin: 15px;
+} 
+
+.formGroupEdit{
+  margin-bottom: 16px;
+}
+
+.confirmButton{
+  border: none;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  background-color: #4d7398bd;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  margin: 15px;
+}
+
+.confirmButton:hover{
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  background-color: #4D7298;
+  text-decoration: underline;
+  transition: all 0.2s ease-in;
+  margin: 15px;
 }

@@ -11,7 +11,7 @@
         require_once('sideBar.php');
     ?>   
 <div class="Logo_box">
-    <img src="img\logo-big-outlines-only.png" alt="Logo"> //Haal de sidebar op, zodat die in de header zit.
+    <img src="img\logo-big-outlines-only.png" alt="Logo"> 
 </div>
  
 </div>  
