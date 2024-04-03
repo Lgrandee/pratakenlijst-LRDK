@@ -119,6 +119,8 @@ label{
 
 
 
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -437,6 +439,77 @@ transform: translateX(350px);
 .footer-col .social-links a:hover{
   color: #24262b;
   background-color: #ffffff;
+}
+
+tr:nth-child(odd)
+{
+  background-color:#77A6B6;
+}
+
+tr:first-child
+{
+  background-color:#4D7298;
+}
+
+tr{
+  background-color: #9DC3C2;
+}
+
+tr:hover
+{
+  background-color:#4D7298;
+  color: black;
+}
+
+table{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.stylele{
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0px black;
+  background-color: rgba(128, 128, 128, 0.258);
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  
+}
+
+.reason{
+
+  padding-top: 0px;
+
+}
+
+
+
+.stylele p{
+font-size: 18px;
+padding-left: 50px;
+}
+
+.stylele h1{
+  font-weight: bold;
+  padding-left: 50px;
+}
+
+.stat p{
+  font-weight: bold;
+}
+
+.bigfoot{
+  padding-top: 100px;
+}
+
+.bigH{
+  font-size: 10px;
+  text-align: center;
+}
+
+.S1{
+  color: red;
+  text-decoration:underline;
 }
 
 /* logo */
