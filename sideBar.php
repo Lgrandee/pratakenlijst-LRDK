@@ -6,23 +6,23 @@
         </button>
         <div class="nav-links-container">
             <a href="#" class="nav-link">
-                <span class="nav-text">fuckyou1</span>
+                <span class="nav-text">/|\link1/|\</span>
                 <ion-icon name="cube-outline"></ion-icon>
             </a>
             <a href="#" class="nav-link">
-                <span class="nav-text">fuckyou2</span>
+                <span class="nav-text">/|\link2/|\</span>
                 <ion-icon name="color-palette-outline"></ion-icon>
             </a>
             <a href="#" class="nav-link">
-                <span class="nav-text">fuckyou3</span>
+                <span class="nav-text">/|\link3/|\</span>
                 <ion-icon name="heart-outline"></ion-icon>
             </a>
             <a href="#" class="nav-link">
-                <span class="nav-text">fuckyou4</span>
+                <span class="nav-text">/|\link4/|\</span>
                 <ion-icon name="sparkles-outline"></ion-icon>
             </a>
             <a href="#" class="nav-link">
-                <span class="nav-text">fuckyou5</span>
+                <span class="nav-text">/|\link5/|\</span>
                 <ion-icon name="rose-outline"></ion-icon>
             </a>
         </div>
