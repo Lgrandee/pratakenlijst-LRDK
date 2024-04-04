@@ -16,7 +16,7 @@
             <div class="social-links">
                 <a href="https://www.facebook.com/kyrewiet/?locale=nl_NL"><ion-icon name="logo-facebook"></ion-icon></a>
                 <a href="https://www.instagram.com/atelierkyrewiet/"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href="//wa.me/0624512770"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <a href="//wa.me/0624512770"><i class="fa-solid fa-envelope-open"></i></a>
             </div>
             </div>
     </div>

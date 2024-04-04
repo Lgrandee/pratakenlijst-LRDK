@@ -5,26 +5,45 @@
             <ion-icon name="close-outline" size="large"></ion-icon>
         </button>
         <div class="nav-links-container">
-            <a href="#" class="nav-link">
-                <span class="nav-text">/|\link1/|\</span>
-                <ion-icon name="cube-outline"></ion-icon>
+            <a href="index.php" class="nav-link">
+                <span class="nav-text">Homepage</span>
+                <i class="fa-solid fa-house"></i>
             </a>
-            <a href="#" class="nav-link">
-                <span class="nav-text">/|\link2/|\</span>
-                <ion-icon name="color-palette-outline"></ion-icon>
-            </a>
-            <a href="#" class="nav-link">
-                <span class="nav-text">/|\link3/|\</span>
-                <ion-icon name="heart-outline"></ion-icon>
-            </a>
-            <a href="#" class="nav-link">
-                <span class="nav-text">/|\link4/|\</span>
-                <ion-icon name="sparkles-outline"></ion-icon>
-            </a>
-            <a href="#" class="nav-link">
-                <span class="nav-text">/|\link5/|\</span>
-                <ion-icon name="rose-outline"></ion-icon>
-            </a>
+
+            <div class="notes">
+                <a href="taskview.php" class="nav-link">
+                    <span class="nav-text">Takenoverzicht</span>
+                    <img src="img/icons/note.png" alt="">
+                </a>
+            </div>
+
+            <div class="login">
+                <a href="registratie\inloggen\index.php" class="nav-link">
+                    <span class="nav-text">Inloggen</span>
+                    <img src="img/icons/key.png" alt="">
+                </a>
+            </div>
+
+            <div class="add">
+                <a href="registratie/registreren/index.php" class="nav-link">
+                    <span class="nav-text">registreren</span>
+                    <img src="img/icons/add.png" alt="">
+                </a>
+            </div>
+
+            <div class="account">
+                <a href="userAccount.php" class="nav-link">
+                    <span class="nav-text">Uw account</span>
+                    <img src="img/icons/customer.png" alt="">
+                </a>
+            </div>
+
+            <div class="edit">
+                <a href="userAccountEdit.php" class="nav-link">
+                    <span class="nav-text">Edit account</span>
+                    <img src="img/icons/wrench.png" alt="">
+                </a>
+            </div>
         </div>
     </nav>
 </header>
