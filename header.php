@@ -11,7 +11,11 @@
         require_once('sideBar.php');
     ?>   
 <div class="Logo_box">
+<<<<<<< Updated upstream
     <img src="img\logo-big-outlines-only.png" alt="Logo"> 
+=======
+    <img src="img\logo-big-outlines-only.png" alt="Logo">
+>>>>>>> Stashed changes
 </div>
  
 </div>  
