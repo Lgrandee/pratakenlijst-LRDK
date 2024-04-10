@@ -12,4 +12,10 @@ VALUES (:naam, :achternaam, :email, :username, :password)";
 
 $statement = $conn->prepare($query);
 
-?>
+$statement->execute([
+    ":naam" => $naam,
+    ":achternaam" => $achternaam,
+    ":email" => $email,
+    ":username" => $username,
+    ":password" => $password,
+]);
