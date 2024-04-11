@@ -1,3 +1,6 @@
+<?php
+    require_once("backend/config.php");
+?>
 
 <header>
     <nav class="nav">
@@ -10,40 +13,45 @@
                 <i class="fa-solid fa-house"></i>
             </a>
 
-            <div class="notes">
-                <a href="taskview.php" class="nav-link">
-                    <span class="nav-text">Takenoverzicht</span>
-                    <img src="img/icons/note.png" alt="">
-                </a>
-            </div>
+            <?php if (!isset($_SESSION['gebruikersnaam'])) { ?>
+                <!-- Laat deze zien als niet ingelogd -->
+                <div class="login">
+                    <a href="registratie\inloggen\index.php" class="nav-link">
+                        <span class="nav-text">Inloggen</span>
+                        <img src="img/icons/key.png" alt="">
+                    </a>
+                </div>
 
-            <div class="login">
-                <a href="registratie\inloggen\index.php" class="nav-link">
-                    <span class="nav-text">Inloggen</span>
-                    <img src="img/icons/key.png" alt="">
-                </a>
-            </div>
+                <div class="add">
+                    <a href="registratie/registreren/index.php" class="nav-link">
+                        <span class="nav-text">Registreren</span>
+                        <img src="img/icons/add.png" alt="">
+                    </a>
+                </div>
+            <?php } else { ?>
+                <!-- Laat deze zien als ingelogt -->
+                <div class="account">
+                    <a href="userAccount.php" class="nav-link">
+                        <span class="nav-text">Uw account</span>
+                        <img src="img/icons/customer.png" alt="">
+                    </a>
+                </div>
 
-            <div class="add">
-                <a href="registratie/registreren/index.php" class="nav-link">
-                    <span class="nav-text">registreren</span>
-                    <img src="img/icons/add.png" alt="">
-                </a>
-            </div>
+                <div class="edit">
+                    <a href="userAccountEdit.php" class="nav-link">
+                        <span class="nav-text">Bewerk account</span>
+                        <img src="img/icons/wrench.png" alt="">
+                    </a>
+                </div>
 
-            <div class="account">
-                <a href="userAccount.php" class="nav-link">
-                    <span class="nav-text">Uw account</span>
-                    <img src="img/icons/customer.png" alt="">
-                </a>
-            </div>
+                <div class="notes">
+                    <a href="taskview.php" class="nav-link">
+                        <span class="nav-text">Takenoverzicht</span>
+                        <img src="img/icons/note.png" alt="">
+                    </a>
+                </div>
 
-            <div class="edit">
-                <a href="userAccountEdit.php" class="nav-link">
-                    <span class="nav-text">Edit account</span>
-                    <img src="img/icons/wrench.png" alt="">
-                </a>
-            </div>
+            <?php } ?>
         </div>
     </nav>
 </header>
@@ -53,6 +61,3 @@
     </button>            
 </main>
 
-   
-
-    
