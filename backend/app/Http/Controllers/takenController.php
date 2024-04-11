@@ -1,9 +1,12 @@
 
 <?php
+require_once("../../backend/conn.php");
+require_once("../../backend/app/Http/Controllers/registreren.php");
 
 if ($action == "create")
 {
-    require_once("../../../conn.php");
+
+
 
     $query = "";
     
@@ -18,7 +21,7 @@ if ($action == "create")
 
 if ($action == "update")
 {
-    require_once("../../../conn.php");
+
 
     $query = "";
     
@@ -32,7 +35,7 @@ if ($action == "update")
 
 if ($action == "delete");
 {
-    require_once("../../../conn.php");
+
 
     $query = "";
     

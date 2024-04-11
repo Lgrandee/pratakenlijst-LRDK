@@ -4,11 +4,13 @@ $achternaam = $_POST['achternaam'];
 $email =$_POST['email'];
 $username= $_POST['username'];
 $password= $_POST['password'];
+$afdeling= $_POST['afdeling'];
+$action = $_POST['action'];
 
-require_once '../../../config.example.php';
+require_once 'backend\config.php';
 
-$query = "INSERT INTO users (naam, achternaam, email, username, `password`)
-VALUES (:naam, :achternaam, :email, :username, :password)";
+$query = "INSERT INTO users (naam, achternaam, email, username, `password`, afdeling)
+VALUES (:naam, :achternaam, :email, :username, :password, :afdeling)";
 
 $statement = $conn->prepare($query);
 
@@ -18,4 +20,5 @@ $statement->execute([
     ":email" => $email,
     ":username" => $username,
     ":password" => $password,
+    ":afdeling" => $afdeling,
 ]);
