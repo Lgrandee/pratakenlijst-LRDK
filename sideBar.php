@@ -13,7 +13,7 @@
                 <i class="fa-solid fa-house"></i>
             </a>
 
-            <?php if (!isset($_SESSION['gebruikersnaam'])) { ?>
+            <?php if (!isset($_SESSION['email'])) { ?>
                 <!-- Laat deze zien als niet ingelogd -->
                 <div class="login">
                     <a href="registratie\inloggen\index.php" class="nav-link">
@@ -29,7 +29,6 @@
                     </a>
                 </div>
             <?php } else { ?>
-                <!-- Laat deze zien als ingelogt -->
                 <div class="account">
                     <a href="userAccount.php" class="nav-link">
                         <span class="nav-text">Uw account</span>

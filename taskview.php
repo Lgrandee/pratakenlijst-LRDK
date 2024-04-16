@@ -3,6 +3,15 @@
 <head>
     <?php require_once("head.php") ?>
     <title>Document</title>
+    <?php
+        if (isset($_SESSION['email'])) {
+            // User is logged in
+            // Add code here for logged in user
+        } else {
+            header("Location: registratie/inloggen/index.php");
+            exit;
+        }
+    ?>  
 </head>
     <body class="nav-open">
         <header>
