@@ -1,5 +1,7 @@
 
 <?php
+require_once("../../backend/conn.php");
+require_once("../../backend/app/Http/Controllers/registreren.php");
 
 
     $action = $_POST['action'];

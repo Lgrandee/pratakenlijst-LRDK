@@ -6,7 +6,7 @@ $username= $_POST['username'];
 $password= $_POST['password'];
 $afdeling = $_POST['afdeling'];
 
-require_once '../../../config.example.php';
+require_once 'backend\config.php';
 
 $query = "INSERT INTO users (naam, achternaam, email, username, `password`, afdeling)
 VALUES (:naam, :achternaam, :email, :username, :password, :afdeling)";
