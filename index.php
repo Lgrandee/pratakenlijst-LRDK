@@ -37,6 +37,6 @@ require_once('footer.php');
 </html>
 <?php
 } else {
-    header("Location: registratie/inloggen/index.php");
+    header("Location: login.php");
     exit;
 }

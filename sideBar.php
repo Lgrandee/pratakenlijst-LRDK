@@ -16,14 +16,14 @@
             <?php if (!isset($_SESSION['email'])) { ?>
                 <!-- Laat deze zien als niet ingelogd -->
                 <div class="login">
-                    <a href="registratie\inloggen\index.php" class="nav-link">
+                    <a href="login.php" class="nav-link">
                         <span class="nav-text">Inloggen</span>
                         <img src="img/icons/key.png" alt="">
                     </a>
                 </div>
 
                 <div class="add">
-                    <a href="registratie/registreren/index.php" class="nav-link">
+                    <a href="register.php" class="nav-link">
                         <span class="nav-text">Registreren</span>
                         <img src="img/icons/add.png" alt="">
                     </a>

@@ -18,11 +18,8 @@
     ?>
 </head>
 
-<body class="nav-open">
+<body >
     <!-- sidebar --> 
-<?php
-    require_once('sidebar.php');
-?>
 
     <?php
     require_once('header.php');
@@ -31,20 +28,24 @@
 
 <div class="inloggen">
     <div class="wrapper">
+        <?php if(isset($_GET['msg']))
+        {
+            echo "<div class='msg'>" . $_GET['msg'] . "</div>";
+        } ?>
         <h1>Inloggen</h1>
-        <form action="<?php echo $base_url; ?>backend\app\Http\Controllers\registreren.php" method="POST">
+        <form action="<?php echo $base_url; ?>/backend/app/Http/Controllers/userController.php" method="POST">
                 <input type="hidden" name="action" value="login">
         <div class="form-group">                 
-            <label for="attractie">User name</label>                 
+            <label for="username">Username</label>                 
             <input type="text" name="username" id="username" class="form-input">             
         </div>
             <div class="form-group">
-                <label for="capaciteit">Email</label>
+                <label for="email">Email</label>
                 <input type="email" name="email" id="email" class="form-input">
             </div>
             <div class="form-group">
-                <label for="melder">Wachtwoord</label>
-                <input type="text" name="wachtwoord" id="wachtwoord" class="form-input">
+                <label for="password">Wachtwoord</label>
+                <input type="password" name="password" id="password" class="form-input">
             </div>
             <input type="submit" value="Verstuur melding">
 
