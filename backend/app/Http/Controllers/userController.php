@@ -30,7 +30,8 @@
             exit;
         } else {
             // Login failed
-            header("Location: ../../../../login.php?msg=$errmsg");
+
+            header("Location: ../../../../index.php?msg=$errmsg");
             exit; 
         }
     }
@@ -77,6 +78,8 @@
     $_SESSION['achternaam'] = $achternaam; // Update to use the correct variable
     $_SESSION['email'] = $email;
     $_SESSION['afdeling'] = $afdeling;
+
+    header("Location: ../../../../login.php?");
     
     }
 

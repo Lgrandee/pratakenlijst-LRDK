@@ -18,11 +18,8 @@
     ?>
 </head>
 
-<body class="nav-open">
-    <!-- sidebar --> 
-<?php
-    require_once('sidebar.php');
-?>
+
+<body >
 
     <?php
     require_once('header.php');
@@ -31,28 +28,26 @@
 
 <div class="inloggen">
     <div class="wrapper">
-        <?php session_destroy();
-            // var_dump($_SESSION);
-        ?>
-        
+        <?php if(isset($_GET['msg']))
+        {
+            echo "<div class='msg'>" . $_GET['msg'] . "</div>";
+        } ?>
         <h1>Inloggen</h1>
-        <form action="backend\app\Http\Controllers\userController.php" method="POST">
+        <form action="<?php echo $base_url; ?>/backend/app/Http/Controllers/userController.php" method="POST">
                 <input type="hidden" name="action" value="login">
-            <div class="form-group">                 
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>             
-            </div>
-
+        <div class="form-group">                 
+            <label for="username">Username</label>                 
+            <input type="text" name="username" id="username" class="form-input">             
+        </div>
             <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-input">
             </div>
-
             <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <label for="password">Wachtwoord</label>
+                <input type="password" name="password" id="password" class="form-input">
             </div>
-            <input type="submit" value="Inloggen">
+            <input type="submit" value="Verstuur melding">
 
         </form>
 
