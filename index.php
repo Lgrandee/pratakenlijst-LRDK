@@ -7,9 +7,6 @@
     require_once('head.php');
     ?>
     
-    <?php
-      if(isset($_SESSION['email'])) {
-    ?>
 </head>
 
 <body class="nav-open">
@@ -18,8 +15,7 @@
     require_once('header.php');
     ?>
     
-    
-  
+
 
               <!-- footer -->
 <footer class="Footer">
@@ -35,8 +31,4 @@ require_once('footer.php');
 </body>
 
 </html>
-<?php
-} else {
-    header("Location: registratie/inloggen/index.php");
-    exit;
-}
+

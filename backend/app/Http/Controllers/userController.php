@@ -30,7 +30,7 @@
             exit;
         } else {
             // Login failed
-            header("Location: ../../../../registratie/inloggen/index.php?msg=$errmsg");
+            header("Location: ../../../../login.php?msg=$errmsg");
             exit; 
         }
     }
