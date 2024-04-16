@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="<?php echo $base_url; ?>/css/main.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
-<script src="java\java.js"></script>
+<script src="java/java.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">

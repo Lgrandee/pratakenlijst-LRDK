@@ -18,7 +18,7 @@
     <main>
         <div class="topContainer">
             <div class="welcomeMessage">
-                <h2>Welkom, <?php echo"gebruiker"?></h2>
+                <h2>Welkom, <?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'SESSION NOT SET' ?></h2>
                 <p>Uw Account</p>
             </div>
             <a href="logout.php">uitloggen</a>
@@ -28,10 +28,13 @@
                 <h3>Uw informatie</h3>
                 <div class="mainInfo">
                     <div class="informationContainer">
-                        <p><span class="boldSpan">Naam:</span> Armani van Rijswijk <?php //echo $taak['naam']; ?></p> <!-- Moet gelinked worden met controller, informatie van user na inloggen -->
-                        <p><span class="boldSpan">Gebruikersnaam:</span> Armanivr <?php // echo $taak['gebruikersnaam']; ?></p> <!-- Moet gelinked worden met controller, informatie van user na inloggen -->
-                        <p><span class="boldSpan">Email:</span> armanivrijswijk@gmail.com <?php //echo $taak['email']; ?></p> <!-- Moet gelinked worden met controller, informatie van user na inloggen -->
-                        <p><span class="boldSpan">Afdeling:</span> Webdevelopment <?php // echo $userInfo['afdeling'];?><p> <!-- Moet gelinked worden met controller, informatie van user na inloggen -->
+                        <?php
+                            var_dump($_SESSION);
+                        ?>
+                        <p><span class="boldSpan">Naam:</span> <?php echo isset($_SESSION['naam']) ? $_SESSION['naam'] : 'SESSION NOT SET';  ?> <?php echo isset($_SESSION['achternaam']) ? $_SESSION['achternaam'] : 'SESSION NOT SET'; ?></p>
+                        <p><span class="boldSpan">Gebruikersnaam:</span> <?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'SESSION NOT SET'; ?></p>
+                        <p><span class="boldSpan">Email:</span> <?php echo isset($_SESSION['email']) ? $_SESSION['email'] : 'SESSION NOT SET'; ?></p>
+                        <p><span class="boldSpan">Afdeling:</span> <?php echo isset($_SESSION['afdeling']) ? $_SESSION['afdeling'] : 'SESSION NOT SET'; ?><p>
                     </div>
                     <a href="userAccountEdit.php">Aanpassen</a>
                 </div>

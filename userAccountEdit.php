@@ -19,33 +19,39 @@
         <div class="topContainer">
             <div class="welcomeMessage">
                 <h2>Welkom, <?php echo"gebruiker"?></h2>
-                <p>Aanpassen</p>
+                <p>Uw Account</p>
             </div>
-            <a href="">uitloggen</a>
+            <a href="logout.php">uitloggen</a>
         </div>
         <div class="bodyContainer">
             <div class="userInformationBox">
                 <h3>Uw informatie</h3>
-                <div class="informationContainer">
-                    <form action="userAccount.php"> <!-- Moet gelinked worden met controller -->
+                <div class="mainInfo">
+                    <div class="informationContainer">
+                    <form action="backend\app\Http\Controllers\userController.php" method="POST">
+                        <input type="hidden" name="action" value="update">
+                        <input type="hidden" name="id" value="<?= $user['id'];?>">
                         <div class="formGroupEdit">
-                            <label for="naam">Naam:</label>
-                            <input type="text" name="naam" id="naam" class="form-input" value="Armani van Rijswijk<?php //echo ($user['naam']);?>"> <!-- Moet gelinked worden met controller, informatie van user na inloggen -->
+                            <label for="naam"><span class="boldSpan">Naam:</span></label>
+                            <input type="text" name="naam" id="naam" class="form-input" value="<?php echo isset($_SESSION['naam']) ? $_SESSION['naam'] : 'SESSION NOT SET'; ?>">
                         </div>
                         <div class="formGroupEdit">
-                            <label for="gebruikersnaam">Gebruikersnaam:</label>
-                            <input type="text" name="gebruikersnaam" id="gebruikersnaam" class="form-input" value="Armanivr<?php //echo ($user['gebruikersnaam']);?>"> <!-- Moet gelinked worden met controller, informatie van user na inloggen -->
+                            <label for="gebruikersnaam"><span class="boldSpan">Gebruikersnaam:</span></label>
+                            <input type="text" name="gebruikersnaam" id="gebruikersnaam" class="form-input" value="<?php echo isset($_SESSION['gebruikersnaam']) ? $_SESSION['gebruikersnaam'] : 'SESSION NOT SET'; ?>">
+
                         </div>
                         <div class="formGroupEdit">
-                            <label for="email">Email:</label>
-                            <input type="email" name="email" id="email" class="form-input" value="armanvrijswijk@gmail.com<?php //echo ($user['gebruikersnaam']);?>"> <!-- Moet gelinked worden met controller, informatie van user na inloggen -->
+                            <label for="email"><span class="boldSpan">Email:</span></label>
+                            <input type="text" name="email" id="email" class="form-input" value="<?php echo isset($_SESSION['email']) ? $_SESSION['email'] : 'SESSION NOT SET'; ?>">
                         </div>
                         <div class="formGroupEdit">
-                            <label for="afdeling">Afdeling:</label>
-                            <input type="text" name="afdeling" id="afdeling" class="form-input" value="Webdevelopment<?php //echo ($user['gebruikersnaam']);?>"> <!-- Moet gelinked worden met controller, informatie van user na inloggen -->
+                            <label for="afdeling"><span class="boldSpan">Afdeling:</span></label>
+                            <input type="text" name="afdeling" id="afdeling" class="form-input" value="<?php echo isset($_SESSION['afdeling']) ? $_SESSION['afdeling'] : 'SESSION NOT SET'; ?>">
                         </div>
                         <input type="submit" class="confirmButton" value="Bevestig">
+                        <a href="userAccount.php">Annuleren</a>
                     </form>
+                    </div>
                 </div>
             </div>
             <div class="linksBox">
@@ -60,20 +66,21 @@
                         <a href="taskView.php">Takenoverzicht</a>
                     </div>
                     <div class="linkGroup">
-                        <img src="img/icons/ForwardArrow.png" alt="forwardArrow"> <!-- Placeholder Link -->
+                        <img src="img/icons/ForwardArrow.png" alt="forwardArrow">
                         <a href=".php">Link</a>
                     </div>
                     <div class="linkGroup">
-                        <img src="img/icons/ForwardArrow.png" alt="forwardArrow"> <!-- Placeholder Link -->
+                        <img src="img/icons/ForwardArrow.png" alt="forwardArrow">
                         <a href=".php">Link</a>
                     </div>
                     <div class="linkGroup">
-                        <img src="img/icons/ForwardArrow.png" alt="forwardArrow"> <!-- Placeholder Link -->
+                        <img src="img/icons/ForwardArrow.png" alt="forwardArrow">
                         <a href=".php">Link</a>
                     </div>
                 </div>
             </div>
         </div>
+
     </main>
     <!-- footer -->
         <footer class="Footer">
