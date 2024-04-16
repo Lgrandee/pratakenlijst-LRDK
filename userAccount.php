@@ -29,7 +29,7 @@
                 <div class="mainInfo">
                     <div class="informationContainer">
                         <?php
-                            var_dump($_SESSION);
+                    
                         ?>
                         <p><span class="boldSpan">Naam:</span> <?php echo isset($_SESSION['naam']) ? $_SESSION['naam'] : 'SESSION NOT SET';  ?> <?php echo isset($_SESSION['achternaam']) ? $_SESSION['achternaam'] : 'SESSION NOT SET'; ?></p>
                         <p><span class="boldSpan">Gebruikersnaam:</span> <?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'SESSION NOT SET'; ?></p>

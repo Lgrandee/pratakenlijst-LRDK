@@ -4,8 +4,7 @@ $achternaam = $_POST['achternaam'];
 $email =$_POST['email'];
 $username= $_POST['username'];
 $password= $_POST['password'];
-$afdeling= $_POST['afdeling'];
-$action = $_POST['action'];
+$afdeling = $_POST['afdeling'];
 
 require_once 'backend\config.php';
 

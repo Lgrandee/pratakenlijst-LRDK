@@ -36,8 +36,13 @@
                             <input type="text" name="naam" id="naam" class="form-input" value="<?php echo isset($_SESSION['naam']) ? $_SESSION['naam'] : 'SESSION NOT SET'; ?>">
                         </div>
                         <div class="formGroupEdit">
+                            <label for="achternaam"><span class="boldSpan">Achternaam:</span></label>
+                            <input type="text" name="achternaam" id="achternaam" class="form-input" value="<?php echo isset($_SESSION['achternaam']) ? $_SESSION['achternaam'] : 'SESSION NOT SET'; ?>">
+                        </div>
+                        
+                        <div class="formGroupEdit">
                             <label for="gebruikersnaam"><span class="boldSpan">Gebruikersnaam:</span></label>
-                            <input type="text" name="gebruikersnaam" id="gebruikersnaam" class="form-input" value="<?php echo isset($_SESSION['gebruikersnaam']) ? $_SESSION['gebruikersnaam'] : 'SESSION NOT SET'; ?>">
+                            <input type="text" name="gebruikersnaam" id="gebruikersnaam" class="form-input" value="<?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'SESSION NOT SET'; ?>">
 
                         </div>
                         <div class="formGroupEdit">

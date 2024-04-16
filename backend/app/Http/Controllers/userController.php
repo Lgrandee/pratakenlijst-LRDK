@@ -1,44 +1,7 @@
 <?php
+    require_once("../../../conn.php");
     $action = $_POST['action'];
-    if ($action == 'update')
-    {
     
-    
-        $id = $_POST['id'];
-    
-        //Variabelen vullen
-        $attractie = $_POST['attractie'];
-        $type = $_POST['type'];
-        $capaciteit = $_POST['capaciteit'];
-        $melder = $_POST['melder'];
-        $prioriteit = isset($_POST['prioriteit']) ? 1 : 0;
-        $otherinfo = $_POST['otherinfo'];
-    
-        $msg = "Je melding is bijgewerkt, bedankt!";
-        header("location: ../../../resources/views/meldingen/index.php?msg=$msg");
-    
-        $reportCard = $capaciteit . " / " . $melder . " / " . $prioriteit . " / " . $otherinfo;
-    
-        //1. Verbinding
-        require_once '../../../conn.php';
-
-    
-        //2. Query
-        $query = "UPDATE meldingen SET capaciteit = :capaciteit, melder = :melder, prioriteit = :prioriteit, otherinfo = :otherinfo WHERE id = :id";
-    
-        
-        //3. Prepare
-        $statement = $conn->prepare($query);
-    
-        //4. Execute
-        $statement->execute([
-            ":id"           => $id,
-            ":capaciteit"   => $capaciteit,
-            ":melder"       => $melder,
-            ":prioriteit"   => $prioriteit,
-            ":otherinfo"   => $otherinfo
-        ]);
-    }
     if ($action == "login"){
 
         $gebruikersnaam = $_POST['username'];
@@ -61,6 +24,7 @@
             $_SESSION['achternaam'] = $user['achternaam'];
             $_SESSION['email'] = $email;
             $_SESSION['afdeling'] = $user['afdeling'];
+            $_SESSION['id'] = $user['id'];
             
             header("Location: ../../../../userAccount.php?msg=$msg");
             exit;
@@ -107,6 +71,61 @@
         ":email" => $email,
         ":afdeling" => $afdeling
     ]);
+
+    $_SESSION['username'] = $username; // Update to use the correct variable
+    $_SESSION['naam'] = $naam; // Update to use the correct variable
+    $_SESSION['achternaam'] = $achternaam; // Update to use the correct variable
+    $_SESSION['email'] = $email;
+    $_SESSION['afdeling'] = $afdeling;
+    
     }
 
+
+    if ($action == 'update')
+    {
+        // Get the user id from the session
+        $id = $_SESSION['id'];
+    
+        //Variabelen vullen
+        $naam = $_POST['naam'];
+        $achternaam = $_POST['achternaam'] ?? '';
+        $username = $_POST['gebruikersnaam'] ?? ''; 
+        $email = $_POST['email'];
+        $afdeling = $_POST['afdeling'];
+    
+    
+        $variables = $naam . " / " . $achternaam . " / " . $username . " / " . $email . " / " . $afdeling;
+    
+        //1. Verbinding
+        require_once '../../../conn.php';
+
+    
+        //2. Query
+        $query = "UPDATE users SET naam = :naam, achternaam = :achternaam, username = :username, email = :email, afdeling = :afdeling WHERE id = :id";
+    
+        
+        //3. Prepare
+        $statement = $conn->prepare($query);
+    
+        //4. Execute
+        $statement->execute([
+            ":id"           => $id,
+            ":naam"         => $naam,
+            ":achternaam"   => $achternaam,
+            ":username"     => $username,
+            ":email"        => $email,
+            ":afdeling"     => $afdeling
+
+        ]);
+
+        // Update session variables after database update
+        $_SESSION['naam'] = $naam;
+        $_SESSION['achternaam'] = $achternaam;
+        $_SESSION['username'] = $username;
+        $_SESSION['email'] = $email;
+        $_SESSION['afdeling'] = $afdeling;
+
+        header("Location: ../../../../userAccount.php");
+    }
 ?>
+
