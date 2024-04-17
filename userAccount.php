@@ -6,7 +6,7 @@
     ?>
     <title>Mijn Account</title>
 </head>
-<body class = "nav-open">
+<body>
     <header>
     <div class="Logo_box">
         
@@ -28,9 +28,7 @@
                 <h3>Uw informatie</h3>
                 <div class="mainInfo">
                     <div class="informationContainer">
-                        <?php
-                    
-                        ?>
+                        
                         <p><span class="boldSpan">Naam:</span> <?php echo isset($_SESSION['naam']) ? $_SESSION['naam'] : 'SESSION NOT SET';  ?> <?php echo isset($_SESSION['achternaam']) ? $_SESSION['achternaam'] : 'SESSION NOT SET'; ?></p>
                         <p><span class="boldSpan">Gebruikersnaam:</span> <?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'SESSION NOT SET'; ?></p>
                         <p><span class="boldSpan">Email:</span> <?php echo isset($_SESSION['email']) ? $_SESSION['email'] : 'SESSION NOT SET'; ?></p>
