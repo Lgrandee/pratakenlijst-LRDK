@@ -12,7 +12,7 @@
     ?>
 </head>
 
-<body class="nav-open">
+<body>
     <!-- sidebar -->    
     <?php
     require_once('header.php');

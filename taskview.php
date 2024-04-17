@@ -13,7 +13,7 @@
         }
     ?>  
 </head>
-    <body class="nav-open">
+    <body>
         <header>
             <?php require_once("header.php"); ?>
             <div class="Logo_box">
