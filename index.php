@@ -7,9 +7,6 @@
     require_once('head.php');
     ?>
     
-    <?php
-      if(isset($_SESSION['email'])) {
-    ?>
 </head>
 
 <body>
@@ -36,7 +33,3 @@ require_once('footer.php');
 
 </html>
 <?php
-} else {
-    header("Location: login.php");
-    exit;
-}
