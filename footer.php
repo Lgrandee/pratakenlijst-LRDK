@@ -4,10 +4,10 @@
         <div class="footer-col">
             <h4>pages</h4>
             <ul class="ulFooter">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">informatiebestellen</a></li>
-                <li><a href="#">informatieproducten</a></li>
-                <li><a href="#">contacten</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="userAccount.php">Uw account</a></li>
+                <li><a href="taskview.php">Takenoverzicht</a></li>
+                <li><a href="contact.php">contacten</a></li>
             </ul>
         </div>
         <div class="rowFooter">
