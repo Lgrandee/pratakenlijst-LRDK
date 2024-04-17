@@ -9,7 +9,7 @@
     
 </head>
 
-<body class="nav-open">
+<body>
     <!-- sidebar -->    
     <?php
     require_once('header.php');
@@ -31,4 +31,6 @@ require_once('footer.php');
 </body>
 
 </html>
+
+<?php
 

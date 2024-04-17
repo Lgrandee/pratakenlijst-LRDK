@@ -6,7 +6,7 @@
     ?>
     <title>Mijn Account</title>
 </head>
-<body class = "nav-open">
+<body>
     <header>
     <div class="Logo_box">
         
