@@ -47,8 +47,9 @@
                 <label for="password">Wachtwoord</label>
                 <input type="password" name="password" id="password" class="form-input">
             </div>
-            <input type="submit" value="Verstuur melding">
-
+            <div class="form-group">
+                <input type="submit" value="Verstuur melding">
+            </div>
         </form>
 
     </div>

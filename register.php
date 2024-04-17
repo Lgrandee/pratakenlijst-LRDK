@@ -40,7 +40,7 @@
                 <label for="afdeling">Afdeling:</label>
                 <input type="text" name="afdeling" id="afdeling">
             </div>
-            <div class="button">
+            <div class="form-group">
                 <input type="submit" value="Registeren">
             </div>
         </form>

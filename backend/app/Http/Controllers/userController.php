@@ -69,7 +69,7 @@
         ":username" => $username,
         ":password" => $hashed_password,
         ":email" => $email,
-        ":afdeling" => $afdeling
+        ":afdeling" => $afdeling,
     ]);
 
     $_SESSION['username'] = $username; // Update to use the correct variable

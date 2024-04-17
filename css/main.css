@@ -101,9 +101,7 @@ html{
     margin: 0 auto;
 }
 
-.form-group{
-    margin: 1rem 0;
-}
+
 
 label{
     cursor: pointer;
@@ -724,4 +722,35 @@ padding-left: 50px;
   text-decoration: underline;
   transition: all 0.2s ease-in;
   margin: 15px;
+}
+
+.form-group
+{
+    border: 3px inset;
+    border-color: #9DC3C2;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #4D7298; 
+}
+.form-group input[type="submit"]{
+  background: transparent;
+  border: none;
+  font-size: medium;
+  transition:0.4s;
+  color: white;
+}
+
+.form-group input[type="submit"]:hover{
+  background-color: white;
+  color: #4D7298;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.form-group label{
+  color: white;
+}
+
+.inlogen h1{
+  
 }
