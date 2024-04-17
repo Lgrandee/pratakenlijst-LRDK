@@ -8,7 +8,7 @@
             <ion-icon name="close-outline" size="large"></ion-icon>
         </button>
         <div class="nav-links-container">
-            <a href="<?php echo $base_url; ?>" class="nav-link">
+            <a href="index.php" class="nav-link">
                 <span class="nav-text">Homepage</span>
                 <i class="fa-solid fa-house"></i>
             </a>
@@ -40,6 +40,13 @@
                     <a href="userAccountEdit.php" class="nav-link">
                         <span class="nav-text">Bewerk account</span>
                         <img src="img/icons/wrench.png" alt="">
+                    </a>
+                </div>
+
+                <div class="notes">
+                    <a href="" class="nav-link">
+                        <span class="nav-text">Taken</span>
+                        <img src="img/icons/noteAdd.png" alt="taken">
                     </a>
                 </div>
 

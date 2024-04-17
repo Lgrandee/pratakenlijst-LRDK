@@ -18,8 +18,8 @@
     ?>
 </head>
 
+
 <body >
-    <!-- sidebar --> 
 
     <?php
     require_once('header.php');

@@ -1,5 +1,5 @@
 <?php
 session_destroy();
-header("Location: registratie/inloggen/index.php");
+header("Location: login.php");
 exit;
 ?>

@@ -30,6 +30,7 @@
             exit;
         } else {
             // Login failed
+
             header("Location: ../../../../index.php?msg=$errmsg");
             exit; 
         }

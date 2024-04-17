@@ -8,12 +8,12 @@
             // User is logged in
             // Add code here for logged in user
         } else {
-            header("Location: registratie/inloggen/index.php");
+            header("Location: login.php");
             exit;
         }
     ?>  
 </head>
-    <body class="nav-open">
+    <body>
         <header>
             <?php require_once("header.php"); ?>
             <div class="Logo_box">
