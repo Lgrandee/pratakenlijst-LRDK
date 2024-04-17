@@ -8,7 +8,7 @@
             // User is logged in
             // Add code here for logged in user
         } else {
-            header("Location: registratie/inloggen/index.php");
+            header("Location: login.php");
             exit;
         }
     ?>  

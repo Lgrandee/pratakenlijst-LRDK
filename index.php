@@ -15,8 +15,7 @@
     require_once('header.php');
     ?>
     
-    
-  
+
 
               <!-- footer -->
 <footer class="Footer">
@@ -32,4 +31,6 @@ require_once('footer.php');
 </body>
 
 </html>
+
 <?php
+
