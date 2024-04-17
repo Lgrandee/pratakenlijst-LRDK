@@ -16,7 +16,7 @@
             <?php if (!isset($_SESSION['email'])) { ?>
                 <!-- Laat deze zien als niet ingelogd -->
                 <div class="login">
-                    <a href="registratie\inloggen\index.php" class="nav-link">
+                    <a href="indexinlogen.php" class="nav-link">
                         <span class="nav-text">Inloggen</span>
                         <img src="img/icons/key.png" alt="">
                     </a>
