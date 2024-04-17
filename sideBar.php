@@ -8,7 +8,7 @@
             <ion-icon name="close-outline" size="large"></ion-icon>
         </button>
         <div class="nav-links-container">
-            <a href="<?php echo $base_url; ?>" class="nav-link">
+            <a href="<?php echo $base_url; ?>/index.php" class="nav-link">
                 <span class="nav-text">Homepage</span>
                 <i class="fa-solid fa-house"></i>
             </a>
