@@ -18,7 +18,7 @@
     <main>
         <div class="topContainer">
             <div class="welcomeMessage">
-                <h2>Welkom, <?php echo"gebruiker"?></h2>
+                <h2>Welkom, <?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'SESSION NOT SET' ?></h2>
                 <p>Uw Account</p>
             </div>
             <a href="logout.php">uitloggen</a>
@@ -30,7 +30,7 @@
                     <div class="informationContainer">
                     <form action="backend\app\Http\Controllers\userController.php" method="POST">
                         <input type="hidden" name="action" value="update">
-                        <input type="hidden" name="id" value="<?= $user['id'];?>">
+                        <input type="hidden" name="id" value="<?php $user['id'];?>">
                         <div class="formGroupEdit">
                             <label for="naam"><span class="boldSpan">Naam:</span></label>
                             <input type="text" name="naam" id="naam" class="form-input" value="<?php echo isset($_SESSION['naam']) ? $_SESSION['naam'] : 'SESSION NOT SET'; ?>">
