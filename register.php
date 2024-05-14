@@ -14,7 +14,7 @@
     <div class="container home">
     <div class="wrapper">
         <h2>Welkom op de registreer pagina</h2>
-        <form action="<?php echo $base_url; ?>/backend/app/Http/Controllers/userController.php" method="POST">
+        <form action="backend/app/Http/Controllers/userController.php" method="POST">
             <input type="hidden" name="action" value="register">
             <div class="form-group">
                 <label for="naam">Naam:</label>
@@ -33,15 +33,20 @@
                 <input type="text" name="username" id="username">
             </div>
             <div class="form-group">
-                <label for="password">Password:</label>
+                <label for="password">Wachtwoord:</label>
                 <input type="password" name="password" id="password">
             </div>
             <div class="form-group">
                 <label for="afdeling">Afdeling:</label>
                 <input type="text" name="afdeling" id="afdeling">
             </div>
+<<<<<<< Updated upstream
             <div class="form-group">
                 <input type="submit" value="Registeren">
+=======
+            <div class="button">
+                <input type="submit" value="Registreren">
+>>>>>>> Stashed changes
             </div>
         </form>
     </div>

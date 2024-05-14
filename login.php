@@ -33,10 +33,10 @@
             echo "<div class='msg'>" . $_GET['msg'] . "</div>";
         } ?>
         <h1>Inloggen</h1>
-        <form action="<?php echo $base_url; ?>/backend/app/Http/Controllers/userController.php" method="POST">
+        <form action="backend/app/Http/Controllers/userController.php" method="POST">
                 <input type="hidden" name="action" value="login">
         <div class="form-group">                 
-            <label for="username">Username</label>                 
+            <label for="username">Gebruikersnaam</label>                 
             <input type="text" name="username" id="username" class="form-input">             
         </div>
             <div class="form-group">
@@ -47,9 +47,14 @@
                 <label for="password">Wachtwoord</label>
                 <input type="password" name="password" id="password" class="form-input">
             </div>
+<<<<<<< Updated upstream
             <div class="form-group">
                 <input type="submit" value="Verstuur melding">
             </div>
+=======
+            <input type="submit" value="inloggen">
+
+>>>>>>> Stashed changes
         </form>
 
     </div>
