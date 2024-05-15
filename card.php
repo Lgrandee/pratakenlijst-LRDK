@@ -26,19 +26,19 @@
         </div>
         <div class="tasksContainer">
             <div class="dividerTask">
-                <p style="font-weight:bold;">Afdeling</p>
+                <p class="exemption" class="titleTask" style="font-weight:bold;">Afdeling</p>
                 <p><?php echo $taak2['afdeling']; ?></p>
             </div>
             <div class="dividerTask">
-                <p style="font-weight:bold;">Status</p>
+                <p class="titleTask" style="font-weight:bold;">Status</p>
                 <p><?php echo $taak2['status']; ?></p>
             </div>
-            <div class="dividerTask">
-                <p style="font-weight:bold;">Deadline</p>
+            <div class="exemption" class="dividerTask">
+                <p class="titleTask" style="font-weight:bold;">Deadline</p>
                 <p><?php echo $taak2['deadline']; ?></p>
             </div>
             <div class="dividerTask">
-                <p style="font-weight:bold;">Gebruiker</p>
+                <p class="titleTask" style="font-weight:bold;">Gebruiker</p>
                 <p><?php echo $taak2['user']; ?></p>
             </div>
         </div>

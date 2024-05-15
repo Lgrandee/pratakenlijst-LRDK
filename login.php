@@ -38,24 +38,28 @@
 
         
         <h1>Inloggen</h1>
-        <form action="backend/app/Http/Controllers/userController.php" method="POST">
-                <input type="hidden" name="action" value="login">
-        <div class="form-group">                 
-            <label for="username">Gebruikersnaam</label>                 
-            <input type="text" name="username" id="username" class="form-input">             
+        <div class="containerForm">
+            <form action="backend/app/Http/Controllers/userController.php" method="POST">
+                    <input type="hidden" name="action" value="login">
+            <div class="form-group">                 
+                <label for="username">Gebruikersnaam</label>                 
+                <input type="text" name="username" id="username" class="form-input">             
+            </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="password">Wachtwoord</label>
+                    <input type="password" name="password" id="password" class="form-input">
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Inloggen">
+                </div>
+            </form>
+            <hr>
+            <p class="linkClass">Nog geen account? <span class="linkSpan"><a href="register.php">Registreer</a></span></p>
         </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-input">
-            </div>
-            <div class="form-group">
-                <label for="password">Wachtwoord</label>
-                <input type="password" name="password" id="password" class="form-input">
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Inloggen">
-            </div>
-        </form>
 
     </div>
 </div>

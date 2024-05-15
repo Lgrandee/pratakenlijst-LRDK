@@ -656,6 +656,19 @@ table{
   .formGroupEdit input {
     width: 230px;
   }
+  .bigH{
+    width: 230px;
+  }
+  .stylele{
+    width: 350px;
+    .leftContainer p, .titleTask,  .exemption{
+      display: none;
+    }
+    .dividerTask{
+      width: 0px;
+    }
+
+  }
 }
 
 
@@ -782,4 +795,13 @@ table{
 
 .taskForm{
   margin-bottom: 50px;
+}
+
+.containerForm{
+  margin-bottom: 50px;
+}
+
+.linkClass{
+  display: flex;
+  justify-content:center;
 }

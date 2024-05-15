@@ -12,7 +12,7 @@
     ?>
 
     <div class="container home">
-    <div class="wrapper">
+    <div class="wrapper" style="margin-bottom: 40px;">
         <h2>Welkom op de registreer pagina</h2>
         <form action="backend/app/Http/Controllers/userController.php" method="POST">
             <input type="hidden" name="action" value="register">
@@ -40,7 +40,7 @@
                 <label for="afdeling">Afdeling:</label>
                 <input type="text" name="afdeling" id="afdeling">
             </div>
-            <div class="button">
+            <div class="form-group">
                 <input type="submit" value="Registreren">
             </div>
         </form>
