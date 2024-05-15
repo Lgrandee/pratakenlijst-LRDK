@@ -44,7 +44,7 @@
                 </div>
 
                 <div class="notes">
-                    <a href="" class="nav-link">
+                    <a href="taskindex.php" class="nav-link">
                         <span class="nav-text">Taken</span>
                         <img src="img/icons/noteAdd.png" alt="taken">
                     </a>

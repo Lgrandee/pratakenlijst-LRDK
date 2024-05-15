@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <?php require_once("head.php") ?>
-    <title>Document</title>
+    <title>Takenoverzicht</title>
     <?php
         if (isset($_SESSION['email'])) {
             // User is logged in
@@ -24,11 +24,10 @@
             <?php require_once("backend/conn.php"); ?>
             <div class="wrapper">
                 <div class="bigH">
-                    <h1>Op deze pagina zie je <span class="S1">alle taken</span> die u nog moet doen!</h1>
+                    <h1>Op deze pagina zie je <span class="S1">alle taken</span> die nog niet klaar zijn.</h1>
                 </div>
                 <div class="tablele">
-                            <?php require_once("card.php"); ?>
-
+                    <?php require_once("card.php"); ?>
                 </div>
             </div>
         </main>

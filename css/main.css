@@ -471,13 +471,23 @@ table{
   display: flex;
   justify-content: space-between;
   margin: 20px;
+  padding: 20px;
   
 }
 
-.reason{
+.leftContainer p{
+  word-wrap: break-word;
+  max-width: 200px;
+}
 
-  padding-top: 0px;
+.tasksContainer{
+  display: flex;
+  justify-content: space-between;
+}
 
+.dividerTask{
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .notes img{
@@ -506,17 +516,12 @@ table{
 }
 
 
-
-
-
 .stylele p{
-font-size: 18px;
-padding-left: 50px;
+  font-size: 18px;
 }
 
 .stylele h1{
   font-weight: bold;
-  padding-left: 50px;
 }
 
 .stat p{
@@ -636,6 +641,24 @@ padding-left: 50px;
   margin-left: 15px;
 }
 
+.linksBox{
+  display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+  .linksBox {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .formGroupEdit input {
+    width: 230px;
+  }
+}
+
+
 .linkGroup{
   margin-bottom: 10px;
 }
@@ -726,11 +749,8 @@ padding-left: 50px;
 
 .form-group
 {
-    border: 3px inset;
-    border-color: #9DC3C2;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #4D7298; 
+
+    padding: 10px; 
 }
 .form-group input[type="submit"]{
   background: transparent;
@@ -741,9 +761,18 @@ padding-left: 50px;
 }
 
 .form-group input[type="submit"]:hover{
+  transition: 0.4s;
   background-color: white;
   color: #4D7298;
   padding: 10px;
+  border-radius: 10px;
+}
+
+.wrapper form{
+  border-color: #9DC3C2;
+  padding: 10px;
+  background-color: #4D7298; 
+  border: 3px;
   border-radius: 10px;
 }
 
@@ -751,6 +780,6 @@ padding-left: 50px;
   color: white;
 }
 
-.inlogen h1{
-  
+.taskForm{
+  margin-bottom: 50px;
 }

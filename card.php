@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php
+        require_once("head.php");
+    ?>
     <title>something and whatever</title>
 </head>
 <body>
@@ -18,17 +20,28 @@
 <div class="all">
         <?php foreach($taken2 as $taak2): ?>
     <div class="stylele">
-
-            <div class="reason">
-                <h1><?php echo $taak2['titel']; ?></h1>
-                <p><?php echo $taak2['beschrijving']; ?></p>
+        <div class="leftContainer">
+            <h1><?php echo $taak2['titel']; ?></h1>
+            <p><?php echo $taak2['beschrijving']; ?></p>
+        </div>
+        <div class="tasksContainer">
+            <div class="dividerTask">
+                <p style="font-weight:bold;">Afdeling</p>
+                <p><?php echo $taak2['afdeling']; ?></p>
             </div>
-            <p><?php echo $taak2['afdeling']; ?></p>
-            <div class="stat">
+            <div class="dividerTask">
+                <p style="font-weight:bold;">Status</p>
                 <p><?php echo $taak2['status']; ?></p>
             </div>
-            <p><?php echo $taak2['deadline']; ?></p>
-            <p><?php echo $taak2['user']; ?></p>
+            <div class="dividerTask">
+                <p style="font-weight:bold;">Deadline</p>
+                <p><?php echo $taak2['deadline']; ?></p>
+            </div>
+            <div class="dividerTask">
+                <p style="font-weight:bold;">Gebruiker</p>
+                <p><?php echo $taak2['user']; ?></p>
+            </div>
+        </div>
     </div>
         <?php endforeach; ?>
 </div>

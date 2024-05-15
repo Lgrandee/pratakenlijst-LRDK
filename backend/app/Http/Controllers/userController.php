@@ -31,7 +31,7 @@
         } else {
             // Login failed
 
-            header("Location: ../../../../index.php?msg=$errmsg");
+            header("Location: ../../../../login.php?msg=$errmsg");
             exit; 
         }
     }
@@ -73,11 +73,6 @@
         ":afdeling" => $afdeling,
     ]);
 
-    $_SESSION['username'] = $username; // Update to use the correct variable
-    $_SESSION['naam'] = $naam; // Update to use the correct variable
-    $_SESSION['achternaam'] = $achternaam; // Update to use the correct variable
-    $_SESSION['email'] = $email;
-    $_SESSION['afdeling'] = $afdeling;
 
     header("Location: ../../../../login.php?");
     

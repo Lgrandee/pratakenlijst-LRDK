@@ -28,10 +28,15 @@
 
 <div class="inloggen">
     <div class="wrapper">
-        <?php if(isset($_GET['msg']))
+        <?php 
+
+        
+        if(isset($_GET['msg']))
         {
             echo "<div class='msg'>" . $_GET['msg'] . "</div>";
         } ?>
+
+        
         <h1>Inloggen</h1>
         <form action="backend/app/Http/Controllers/userController.php" method="POST">
                 <input type="hidden" name="action" value="login">
@@ -47,14 +52,9 @@
                 <label for="password">Wachtwoord</label>
                 <input type="password" name="password" id="password" class="form-input">
             </div>
-<<<<<<< Updated upstream
             <div class="form-group">
-                <input type="submit" value="Verstuur melding">
+                <input type="submit" value="Inloggen">
             </div>
-=======
-            <input type="submit" value="inloggen">
-
->>>>>>> Stashed changes
         </form>
 
     </div>
