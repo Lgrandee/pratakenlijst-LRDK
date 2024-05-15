@@ -40,13 +40,8 @@
                 <label for="afdeling">Afdeling:</label>
                 <input type="text" name="afdeling" id="afdeling">
             </div>
-<<<<<<< Updated upstream
-            <div class="form-group">
-                <input type="submit" value="Registeren">
-=======
             <div class="button">
                 <input type="submit" value="Registreren">
->>>>>>> Stashed changes
             </div>
         </form>
     </div>
