@@ -464,6 +464,17 @@ table{
   margin: 0 auto;
 }
 
+.cardTask{
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0px black;
+  background-color: rgba(128, 128, 128, 0.258);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+}
+
 .stylele{
   border-radius: 5px;
   box-shadow: 2px 2px 2px 0px black;
@@ -475,14 +486,33 @@ table{
   
 }
 
-.leftContainer p{
+h2{
+ text-align: center;
+ border: rgb(0, 229, 255) 1px solid;
+ border-radius: 10px;
+ background-color: rgb(0, 229, 255);
+ color: blue;
+}
+
+.title p{
   word-wrap: break-word;
   max-width: 200px;
 }
 
-.tasksContainer{
+.title{
   display: flex;
   justify-content: space-between;
+}
+
+.information{
+  display: flex;
+  justify-content: space-between;
+}
+
+.tasksContainer{
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
 }
 
 .dividerTask{
@@ -493,6 +523,16 @@ table{
 .notes img{
   width: 25px;
   opacity: 80%;
+}
+
+.todo{
+  border: solid, black, 1px;
+}
+
+.task_container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .login img{
